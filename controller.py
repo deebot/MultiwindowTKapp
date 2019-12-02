@@ -30,6 +30,14 @@ class Controller:
         self.model.value1=self.view.value_var1   
         result= self.model.recogniseButton(caption)
         self.view.value_var1.set(result)
+        # old varient
+    #def on_button_click(self,  caption):
+        #print(f' Inside controller  data for {caption} recieved')
+        #self.model.value1=self.view.value_var1  
+        #self.model.value2= self.view.value_var2  # **Donot get the value #here**
+        #print(self.model.value1.get())
+        #result= self.model.recogniseButton(caption)
+        #self.view.value_var1.set(result)
 if __name__ == "__main__":
     app = Controller()
     app.main()
