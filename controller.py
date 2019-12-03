@@ -18,18 +18,19 @@ class Controller:
         self.view.main()
         
     def on_button_click(self,  caption):
-        print(f' Inside controller  data for {caption} recieved')
+        #print(f' Inside controller  data for {caption} recieved')
         if self.view.gen_tool is not None:
-            self.gen_tool=genTool()
+            print("Buttonf fuction access From  view class")
+#             self.about= genTool(self,self.controller)
+#             self.model.value2=self.about.value_var2
+#             print(self.model.value2.get())
         
-        
-        
-        #self.model.value2=self.view.value_var2
-        #print(f' Inside controller  data for value2 {self.model.value1.get()} recieved')
-        #print(f' Inside controller  data for value2 {self.model.value2.get()} recieved')
-        self.model.value1=self.view.value_var1   
-        result= self.model.recogniseButton(caption)
-        self.view.value_var1.set(result)
+        else:
+            print("Buttonf fuction access From  genTool class")
+#             self.model.value1=self.view.value_var1
+#             print(self.model.value1.get())
+#             result= self.model.recogniseButton(caption)
+#             self.view.value_var1.set(result)
         # old varient
     #def on_button_click(self,  caption):
         #print(f' Inside controller  data for {caption} recieved')
