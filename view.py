@@ -41,6 +41,7 @@ class View(tk.Tk):
         self._make_main_frame()
         self._make_entry()
         self._make_buttons()
+        self.gen_tool=''
         
         
     
