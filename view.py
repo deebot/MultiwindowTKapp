@@ -41,7 +41,7 @@ class View(tk.Tk):
         self._make_main_frame()
         self._make_entry()
         self._make_buttons()
-        self.about=genTool(self,self.controller)
+        
         
     
     def main(self):
@@ -66,6 +66,7 @@ class View(tk.Tk):
         
         
     def open_window(self):
+        self.about=genTool(self,self.controller)
         
         self.about.grab_set()
     def _make_main_frame(self):
