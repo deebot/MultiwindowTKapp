@@ -6,11 +6,11 @@ class Model:
     def recogniseButton(self, caption):
         
         if caption == 'Button1':
-            print('Inside the Model Button1  registered. ')
+            #print('Inside the Model Button1  registered. ')
             self.value= ''
             return self.value
         if caption == 'Button2':
-            print("Inside the Model Button2  registered. This button is  toplevel")
+            #print("Inside the Model Button2  registered. This button is  toplevel")
             self.value= ''
             return self.value
             
