@@ -15,6 +15,7 @@ class genTool(tk.Toplevel):
         self._make_entry()
         self._make_buttons()
         
+        
   
     def _make_entry(self):
         self.value_var2=tk.StringVar()
@@ -41,7 +42,7 @@ class View(tk.Tk):
         self._make_main_frame()
         self._make_entry()
         self._make_buttons()
-        self.gen_tool=''
+        self.gen_Tool=None
         
         
     
@@ -51,6 +52,7 @@ class View(tk.Tk):
     
     def _make_entry(self):
         self.value_var1=tk.StringVar()
+        self.value_var2=tk.StringVar()
         
         
         self.ent =tk.Entry(self, textvariable= self.value_var1)
@@ -68,6 +70,8 @@ class View(tk.Tk):
         
     def open_window(self):
         self.about=genTool(self,self.controller)
+        self.gen_Tool= "classup"
+        
         
         self.about.grab_set()
     def _make_main_frame(self):
